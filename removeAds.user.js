@@ -7,4 +7,6 @@
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
 // @grant        none
 // ==/UserScript==
-window.onload = function () {$(':contains("Hide")').click();};
+function clickHide() {$(':contains("Hide")').click();}
+window.onload = clickHide;
+window.setTimeout(clickHide, 10000);
